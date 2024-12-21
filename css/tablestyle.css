@@ -1,0 +1,121 @@
+/* General body styling */
+body {
+    font-family: 'Nunito', sans-serif;;
+    background-color: #f4f6f8; /* Light gray background for the page */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for centering the table */
+.container {
+    max-width: 25100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+}
+
+/* Table styling */
+table {
+    width: 800px;
+    border-collapse: separate; /* For modern look, allows borders to stand apart */
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the borders round off nicely */
+    margin-left: auto; /* Centers the table horizontally */
+    margin-right: auto; /* Centers the table horizontally */
+}
+
+/* Table header */
+thead th {
+    background-color: #06BBCC; /* Cyan color for header */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #06BBCC; /* Bold top border */
+    border-bottom: 2px solid #ddd; /* Soft bottom border */
+}
+
+/* Bold class with attractive separation */
+.bold {
+    font-weight: bold;
+    color: #06BBCC; /* Cyan color for bold points */
+    padding-top: 20px; /* Adding top padding for separation */
+    background-color: #f1f5f8; /* Light cyan background to highlight the bold points */
+    margin-top: 20px; /* Space above bold cells */
+    border-radius: 5px 5px 0 0; /* Rounded corners for the bold row */
+}
+
+.bold i {
+    margin-right: 8px;
+    color: #06BBCC;
+}
+
+/* Table rows */
+tbody tr {
+    background-color: #ffffff; /* White background for rows */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #f1f1f1; /* Light, clean border for separation */
+}
+
+tbody tr:hover {
+    background-color: #e1f7f7; /* Soft cyan hover effect */
+    box-shadow: 0 4px 12px rgba(6, 187, 204, 0.15); /* Enhanced shadow effect on hover */
+}
+
+/* Table cells */
+td {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #555;
+    border-right: 1px solid #f1f1f1; /* Light border between cells */
+}
+
+td:last-child {
+    border-right: none; /* Remove the right border for the last column */
+}
+
+/* Indentation for subpoints */
+.tab-indent {
+    padding-left: 45px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Styling for icons */
+i {
+    font-size: 16px;
+    color: #06BBCC;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .tab-indent {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    th, td {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .tab-indent {
+        padding-left: 15px;
+    }
+}
