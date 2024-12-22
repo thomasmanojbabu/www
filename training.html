@@ -12,6 +12,8 @@
     <meta property="og:image" content="https://gis.infotechexpert.net/img/GIS.jpg" />
     <meta property="og:url" content="https://gis.infotechexpert.net" />
     <meta property="og:type" content="website" />
+
+	
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -34,22 +36,19 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/tablestyle.css" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>GIS Infotech</h2>
+            <h2 class="m-1 text-primary"><i class="fa fa-globe me-3"></i>GIS Infotech</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -62,9 +61,9 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Academic Assignments</a>
-                        <a href="testimonial.html" class="dropdown-item">Research Papers</a>
-                        <a href="404.html" class="dropdown-item">Business Projects</a>
+                        <a href="" class="dropdown-item">Academic Assignments</a>
+                        <a href="" class="dropdown-item">Research Papers</a>
+                        <a href="" class="dropdown-item">Business Projects</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -75,147 +74,509 @@
     <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Training</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Training</li>
-                        </ol>
-                    </nav>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">GIS Training</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Master GIS, unlock endless possibilities</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Master GIS through online training to analyze, visualize, and solve complex problems, unlocking endless possibilities.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Courses Start -->
-    <div class="container-xxl py-1">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h3 class="section-title bg-white text-center text-primary px-3">GIS Training</h3>
-                </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">GIS Projects</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Unlocking insights through spatial analysis</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Utilizing GIS analysis to uncover spatial patterns, optimize solutions, and drive data-driven decision making.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
                             </div>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">GIS FUNDAMENTALS</h3>
-                            <div class="mb-3">
-                                <h6 class="fa fa-clock text-primary"> 60 Hrs </h6>
-                            </div>
-                        </div>
-                    <div class="d-flex flex-column border">
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;GIS & Remote Sensing</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Datum & Projection</small>		
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Data Types, Heads-up Digitization</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Symbology & Labelling</small>
-  				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Spatial data input & Editing</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Database Management</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Cartographic Principles & Design</small>
-                   	</div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">ADVANCED GIS</h3>
-                            <div class="mb-3">
-                                <h6 class="fa fa-clock text-primary"> 120 Hrs</h6>
-                            </div>
-                        </div>
-                    	<div class="d-flex flex-column border">
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;GIS & Remote Sensing</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Datum & projection</small>		
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Data Types, Heads-up Digitization</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Symbology & Labelling</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Spatial data input 7 Editing</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Database Management</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Cartographic Principles & Design</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to analaysis toolbox</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Network Analysis</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Remote Sensing</small>		
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Image Classification: Supervised/Unsupervised</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Spatial analysis & Statistics</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Model Builder</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;3D Modelling</small>
-				        	</div>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <!-- Courses End -->
-
-
-<!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kalamassery, Kochi, Kerala, India</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 00000 00000</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>infotechexpert.net@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://in.linkedin.com/in/rajimoltr"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                  </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">GIS Infotech Expert</a>, All Right Reserved.
-
-			Designed By <a class="border-bottom" href="https://infotechexpert.net">Manoj Babu</a>
-
+	    <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">GIS Reserches</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Carousel End -->
+
+    
+<div class="table-container">
+    <!-- Course 1 Syllabus -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Course 1: GIS INTERMEDIATE
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic1')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">1</span>GIS & REMOTE SENSING
+                </td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>GIS Defenition</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Principles of GIS</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Principles of Remote Sensing</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Applications of GIS and Remote Sensing</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Resolution</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Types of Resolutions</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Image Interpretation Techniques</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Types</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Principles of GPS and Applications of GPS</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>Spatial Data Models (Vector and Raster)</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic" style="display: none;">
+                <td>GIS File Formats</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic2')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">2</span>DATUM AND PROJECTION
+                </td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Datum</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Coordinate System - Latitudes, Longitudes</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Map Projection and Transformations - UTM</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Map Scales</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Introduction to Georeferencing</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Georeferencing of Images</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic" style="display: none;">
+                <td>Image to Image Georeferencing</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic3')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">3</span> DATA TYPES, HEADS-UP DIGITIZATION
+                </td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Vector data and Raster data</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Shape file & Extensions</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Data conversions</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Attribute Table creation and editing</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Spatial Query (By Location and Attribute)</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Non-Spatial Data (CSV)</td>
+            </tr>
+            <tr id="course1-topic3" class="subtopic" style="display: none;">
+                <td>Digitization & adding attributes for spatial data</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic4')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">4</span> SYMBOLOGY & LABELLING
+                </td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Introduction to Symbolization</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Single Symbol / Unique Value</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Graduated Colours, Proportional Symbol</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Dot Density maps & Chart</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Heat Map</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Preparation of map with labels</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Displaying dynamic labels</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Reference scale</td>
+            </tr>
+            <tr id="course1-topic4" class="subtopic" style="display: none;">
+                <td>Converting labels to annotation</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic5')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">5</span> SPATIAL DATA INPUT AND EDITING
+                </td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Introduction to Editing tools</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Advanced Editing</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Basic Spatial Adjustment</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Affine Transformation</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Rubber Sheeting</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Edge Snapping</td>
+            </tr>
+            <tr id="course1-topic5" class="subtopic" style="display: none;">
+                <td>Attribute Transfer</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic6')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">6</span> INTRODUCTION TO DATABASE MANAGEMENT
+                </td>
+            </tr>
+            <tr id="course1-topic6" class="subtopic" style="display: none;">
+                <td>Creating and importing of Geodatabase</td>
+            </tr>
+            <tr id="course1-topic6" class="subtopic" style="display: none;">
+                <td>Domain and Subtype</td>
+            </tr>
+            <tr id="course1-topic6" class="subtopic" style="display: none;">
+                <td>Topology & Error Checking</td>
+            </tr>
+            <tr id="course1-topic6" class="subtopic" style="display: none;">
+                <td>Feature Conversions</td>
+            </tr>
+            <tr id="course1-topic6" class="subtopic" style="display: none;">
+                <td>Raster Dataset</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic7')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">7</span> CARTOGRAPHIC PRINCIPLES AND DESIGN
+                </td>
+            </tr>
+            <tr id="course1-topic7" class="subtopic" style="display: none;">
+                <td>Introduction</td>
+            </tr>
+            <tr id="course1-topic7" class="subtopic" style="display: none;">
+                <td>Cartographic principles</td>
+            </tr>
+            <tr id="course1-topic7" class="subtopic" style="display: none;">
+                <td>Map Layout</td>
+            </tr>
+            <tr id="course1-topic7" class="subtopic" style="display: none;">
+                <td>Symbology- scale, legend, north arrow</td>
+            </tr>
+            <tr id="course1-topic7" class="subtopic" style="display: none;">
+                <td>Data Presentation</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Course 2 Syllabus -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Course 2: GIS ADVANCED</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic1')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">1</span> INTRODUCTION TO ANALYSIS TOOLBOX (ARCGIS & QGIS)
+                </td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic" style="display: none;">
+                <td>Extract</td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic" style="display: none;">
+                <td>Overlay</td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic" style="display: none;">
+                <td>Proximity (Buffer, Multiple Ring Buffer, etc.)</td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic" style="display: none;">
+                <td>Statistics</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic2')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">2</span> NETWORK ANALYSIS
+                </td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic" style="display: none;">
+                <td>Finding the Shortest route</td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic" style="display: none;">
+                <td>New Service Area</td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic" style="display: none;">
+                <td>Closest Facility</td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic" style="display: none;">
+                <td>OD Cost Matrix</td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic" style="display: none;">
+                <td>Location Allocation</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic3')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">3</span> INTRODUCTION TO REMOTE SENSING
+                </td>
+            </tr>
+            <tr id="course2-topic3" class="subtopic" style="display: none;">
+                <td>Aerial and Satellite and Remote Sensing</td>
+            </tr>
+            <tr id="course2-topic3" class="subtopic" style="display: none;">
+                <td>Types of satellites</td>
+            </tr>
+            <tr id="course2-topic3" class="subtopic" style="display: none;">
+                <td>Applications of Remote Sensing</td>
+            </tr>
+            <tr id="course2-topic3" class="subtopic" style="display: none;">
+                <td>Hyperspectral Data Analysis</td>
+            </tr>
+            <tr id="course2-topic3" class="subtopic" style="display: none;">
+                <td>Normalized Difference Vegetation Index (NDVI)</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic4')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">4</span> IMAGE CLASSIFICATION: SUPERVISED / UNSUPERVISED
+                </td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Training samples</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Evaluating training samples</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Editing classes</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Creating the signature file</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Examining the signature file</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Editing the signature file</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Applying classification</td>
+            </tr>
+            <tr id="course2-topic4" class="subtopic" style="display: none;">
+                <td>Post-classification processing</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic5')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">5</span> SPATIAL ANALYSIS AND STATISTICS
+                </td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Change detection</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Crime Analysis</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Fishnet and mesh analysis</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Hot Spot Analysis and Heat map</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Watershed/Hydrological Analysis</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Geostatistical Analysis</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Overlay analysis</td>
+            </tr>
+            <tr id="course2-topic5" class="subtopic" style="display: none;">
+                <td>Zonal Statistics</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic6')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">6</span> MODEL BUILDER
+                </td>
+            </tr>
+            <tr id="course2-topic6" class="subtopic" style="display: none;">
+                <td>Building Models for GIS Analysis using ArcGIS</td>
+            </tr>
+            <tr id="course2-topic6" class="subtopic" style="display: none;">
+                <td>Create a new geoprocessing model</td>
+            </tr>
+            <tr id="course2-topic6" class="subtopic" style="display: none;">
+                <td>Validating the model</td>
+            </tr>
+            <tr id="course2-topic6" class="subtopic" style="display: none;">
+                <td>Set model parameters</td>
+            </tr>
+            <tr id="course2-topic6" class="subtopic" style="display: none;">
+                <td>Prepare the model for sharing</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic7')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">7</span> 3D MODELLING
+                </td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>Contour</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>Digital Elevation Models, Digital Terrain Modelling</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>SRTM Data</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>3D Analysis - Triangulated Irregular networks (TINs)</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>3D visualization using Arc Scene</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>Relief, Hill shade, View Shed</td>
+            </tr>
+            <tr id="course2-topic7" class="subtopic" style="display: none;">
+                <td>Multipatch</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 
+<script>
+    // Function to toggle the visibility of subtopics
+    function toggleSubtopics(topicId) {
+        var subtopics = document.querySelectorAll('#' + topicId);
+        var button = document.querySelector(`#${topicId}`).previousElementSibling.querySelector('button');
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        subtopics.forEach(function(subtopic) {
+            if (subtopic.style.display === 'none' || subtopic.style.display === '') {
+                subtopic.style.display = 'table-row';
+                button.innerHTML = '<i class="fas fa-minus"></i>';  // Change button to collapse
+                button.title = "Click to collapse"; // Update tooltip text
+            } else {
+                subtopic.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-plus"></i>';  // Change button to expand
+                button.title = "Click to expand"; // Update tooltip text
+            }
+        });
+    }
+</script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
-
 </html>
