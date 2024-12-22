@@ -1,255 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/tablestyle.css">
-  <title>Responsive Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Syllabus</title>
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+
+        table {
+            width: 48%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        th {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 500;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            background-color: #f4f6fc;
+        }
+
+        tr:hover {
+            background-color: #e9effc;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+
+        .expandable {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .expand-collapse-btn {
+            font-size: 20px;
+            color: #007bff;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-right: 12px;
+        }
+
+        .expand-collapse-btn:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Custom Topic Icon Style */
+        .topic-icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            font-size: 18px;
+            margin-right: 12px;
+        }
+
+        /* Add padding to the left for subtopics */
+        .subtopic td {
+            padding-left: 70px; /* Add left padding to subtopic rows */
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 768px) {
+            .table-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 30px auto;
+                max-width: 1200px;
+            }
+
+            .table-container table {
+                width: 48%;
+            }
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 767px) {
+            .table-container {
+                display: block;
+                margin: 20px;
+            }
+
+            .table-container table {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .expand-collapse-btn {
+                margin-right: 8px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-  <div class="table-container">
-    <table class="responsive-table">
-      <thead>
-        <tr>
-          <th>Course 1: GIS Intermediate - Level 1 (60 Hours)</th>
-          <th>Course 2: GIS Advanced - Level 2 (75 Hours)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>GIS & REMOTE SENSING</strong></td>
-          <td><strong>INTRODUCTION TO ANALYSIS TOOLBOX (ARCGIS & QGIS)</strong></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;GIS Definition</td>
-          <td>&nbsp;&nbsp;Extract</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Principles of GIS</td>
-          <td>&nbsp;&nbsp;Overlay</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Principles of Remote Sensing</td>
-          <td>&nbsp;&nbsp;Proximity (Buffer, Multiple Ring Buffer, etc.)</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Applications of GIS and Remote Sensing</td>
-          <td>&nbsp;&nbsp;Statistics</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Resolution</td>
-          <td>&nbsp;&nbsp;Network Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Types of Resolutions</td>
-          <td>&nbsp;&nbsp;Finding the Shortest Route</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Image Interpretation Techniques</td>
-          <td>&nbsp;&nbsp;New Service Area</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Digital Image Processing: Types</td>
-          <td>&nbsp;&nbsp;Closest Facility</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Principles of GPS and Applications of GPS</td>
-          <td>&nbsp;&nbsp;OD Cost Matrix</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Spatial Data Models (Vector and Raster)</td>
-          <td>&nbsp;&nbsp;Location Allocation</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;GIS File Formats</td>
-          <td>&nbsp;&nbsp;Introduction to Remote Sensing</td>
-        </tr>
-        <tr>
-          <td><strong>DATUM AND PROJECTION</strong></td>
-          <td>&nbsp;&nbsp;Aerial and Satellite Remote Sensing</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Datum</td>
-          <td>&nbsp;&nbsp;Types of Satellites</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Coordinate System - Latitudes, Longitudes</td>
-          <td>&nbsp;&nbsp;Applications of Remote Sensing</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Map Projection and Transformations - UTM</td>
-          <td>&nbsp;&nbsp;Hyperspectral Data Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Map Scales</td>
-          <td>&nbsp;&nbsp;Normalized Difference Vegetation Index (NDVI)</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Introduction to Georeferencing</td>
-          <td>&nbsp;&nbsp;Image Classification: Supervised / Unsupervised</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Georeferencing of Images</td>
-          <td>&nbsp;&nbsp;Training Samples</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Image to Image Georeferencing</td>
-          <td>&nbsp;&nbsp;Evaluating Training Samples</td>
-        </tr>
-        <tr>
-          <td><strong>DATA TYPES, HEADS-UP DIGITIZATION</strong></td>
-          <td>&nbsp;&nbsp;Editing Classes</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Vector Data and Raster Data</td>
-          <td>&nbsp;&nbsp;Creating the Signature File</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Shape file & Extensions</td>
-          <td>&nbsp;&nbsp;Examining the Signature File</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Data Conversions</td>
-          <td>&nbsp;&nbsp;Editing the Signature File</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Attribute Table Creation and Editing</td>
-          <td>&nbsp;&nbsp;Applying Classification</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Spatial Query (By Location and Attribute)</td>
-          <td>&nbsp;&nbsp;Post-classification Processing</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Non-Spatial Data (CSV)</td>
-          <td><strong>SPATIAL ANALYSIS AND STATISTICS</strong></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Digitization & Adding Attributes for Spatial Data</td>
-          <td>&nbsp;&nbsp;Change Detection</td>
-        </tr>
-        <tr>
-          <td><strong>SYMBOLOGY & LABELLING</strong></td>
-          <td>&nbsp;&nbsp;Crime Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Introduction to Symbolization</td>
-          <td>&nbsp;&nbsp;Fishnet and Mesh Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Single Symbol / Unique Value</td>
-          <td>&nbsp;&nbsp;Hot Spot Analysis and Heat Map</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Graduated Colours, Proportional Symbol</td>
-          <td>&nbsp;&nbsp;Watershed / Hydrological Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Dot Density Maps & Chart</td>
-          <td>&nbsp;&nbsp;Geostatistical Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Heat Map</td>
-          <td>&nbsp;&nbsp;Overlay Analysis</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Preparation of Map with Labels</td>
-          <td>&nbsp;&nbsp;Zonal Statistics</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Displaying Dynamic Labels</td>
-          <td><strong>MODEL BUILDER</strong></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Reference Scale</td>
-          <td>&nbsp;&nbsp;Building Models for GIS Analysis using ArcGIS</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Converting Labels to Annotation</td>
-          <td>&nbsp;&nbsp;Create a New Geoprocessing Model</td>
-        </tr>
-        <tr>
-          <td><strong>SPATIAL DATA INPUT AND EDITING</strong></td>
-          <td>&nbsp;&nbsp;Validating the Model</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Introduction to Editing Tools</td>
-          <td>&nbsp;&nbsp;Set Model Parameters</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Advanced Editing</td>
-          <td>&nbsp;&nbsp;Prepare the Model for Sharing</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Basic Spatial Adjustment</td>
-          <td><strong>3D MODELLING</strong></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Affine Transformation</td>
-          <td>&nbsp;&nbsp;Contour</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Rubber Sheeting</td>
-          <td>&nbsp;&nbsp;Digital Elevation Models, Digital Terrain Modelling</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Edge Snapping</td>
-          <td>&nbsp;&nbsp;SRTM Data</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Attribute Transfer</td>
-          <td>&nbsp;&nbsp;3D Analysis - Triangulated Irregular Networks (TINs)</td>
-        </tr>
-        <tr>
-          <td><strong>INTRODUCTION TO DATABASE MANAGEMENT</strong></td>
-          <td>&nbsp;&nbsp;3D Visualization using ArcScene</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Creating and Importing of Geodatabase</td>
-          <td>&nbsp;&nbsp;Relief, Hillshade, View Shed</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Domain and Subtype</td>
-          <td>&nbsp;&nbsp;Multipatch</td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Topology & Error Checking</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Feature Conversions</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Raster Dataset</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><strong>CARTOGRAPHIC PRINCIPLES AND DESIGN</strong></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Introduction</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Cartographic Principles</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Map Layout</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Symbology - Scale, Legend, North Arrow</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;&nbsp;Data Presentation</td>
-          <td></td>
-        </tr>
-      </tbody>
+
+<div class="table-container">
+    <!-- Course 1 Syllabus -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Course 1: Introduction to GIS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic1')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">1</span> GIS & REMOTE SENSING</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>GIS Defenition</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Principles of GIS</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Principles of Remote Sensing</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Applications of GIS and Remote Sensing</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Resolution</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Types of Resolutions</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Image Interpretation techniques</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Digital Image Processing : Types</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Principles of GPS and Applications of GPS</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>Spatial Data Models (Vector and Raster)</td>
+            </tr>
+            <tr id="course1-topic1" class="subtopic">
+                <td>GIS File formats</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course1-topic2')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">2</span> DATUM & PROJECTION
+                </td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Datum</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Coordinate System - Latitudes, Longitudes</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Map Projection and Transformations - UTM</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Map Scales</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Introduction to Georeferencing</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Georeferencing of Images</td>
+            </tr>
+            <tr id="course1-topic2" class="subtopic">
+                <td>Image to Image Georeferencing</td>
+            </tr>
+        </tbody>
     </table>
-  </div>
+
+    <!-- Course 2 Syllabus -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Course 2: Advanced GIS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic1')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">1</span> Topic 1: Spatial Analysis Techniques
+                </td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic">
+                <td>Subtopic 1.1: Raster vs. Vector Data</td>
+            </tr>
+            <tr id="course2-topic1" class="subtopic">
+                <td>Subtopic 1.2: Buffer Analysis</td>
+            </tr>
+            <tr>
+                <td class="expandable">
+                    <button class="expand-collapse-btn" onclick="toggleSubtopics('course2-topic2')" title="Click to expand">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <span class="topic-icon">2</span> Topic 2: Geospatial Databases
+                </td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic">
+                <td>Subtopic 2.1: Database Models</td>
+            </tr>
+            <tr id="course2-topic2" class="subtopic">
+                <td>Subtopic 2.2: Spatial Data Storage</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Function to toggle the visibility of subtopics
+    function toggleSubtopics(topicId) {
+        var subtopics = document.querySelectorAll('#' + topicId);
+        var button = document.querySelector(`#${topicId}`).previousElementSibling.querySelector('button');
+
+        subtopics.forEach(function(subtopic) {
+            if (subtopic.style.display === 'none' || subtopic.style.display === '') {
+                subtopic.style.display = 'table-row';
+                button.innerHTML = '<i class="fas fa-minus"></i>';  // Change button to collapse
+                button.title = "Click to collapse"; // Update tooltip text
+            } else {
+                subtopic.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-plus"></i>';  // Change button to expand
+                button.title = "Click to expand"; // Update tooltip text
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
