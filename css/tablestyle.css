@@ -14,6 +14,7 @@ body {
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow-x: auto; /* Ensure scroll if too wide */
   }
   
   /* Table Styles */
@@ -34,4 +35,25 @@ body {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
+  }
+  
+  .responsive-table td {
+    background-color: #f9f9f9;
+    color: #555;
+  }
+  
+  /* Hover effect for rows */
+  .responsive-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive layout for smaller devices */
+  @media screen and (max-width: 768px) {
+    .responsive-table th, .responsive-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .responsive-table tr {
+      margin-bottom
   
