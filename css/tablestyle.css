@@ -1,56 +1,122 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f6f9;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+table {
+  width: 48%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+th {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  background-color: #f4f6fc;
+}
+
+tr:hover {
+  background-color: #e9effc;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+.expandable {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.expand-collapse-btn {
+  font-size: 20px;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 12px;
+}
+
+.expand-collapse-btn:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Custom Topic Icon Style */
+.topic-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+/* Add padding to the left for subtopics */
+.subtopic td {
+  padding-left: 100px; /* Add left padding to subtopic rows */
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
   .table-container {
-    width: 90%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px auto;
+      max-width: 1200px;
   }
-  
-  /* Table Styles */
-  .responsive-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
+
+  .table-container table {
+      width: 48%;
   }
-  
-  .responsive-table th, .responsive-table td {
-    padding: 15px;
-    text-align: left;
-    border: 1px solid #ddd;
-    font-size: 14px;
-  }
-  
-  .responsive-table th {
-    background-color: #0056b3;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  
-  .responsive-table td {
-    background-color: #f9f9f9;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .responsive-table th, .responsive-table td {
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  .table-container {
       display: block;
+      margin: 20px;
+  }
+
+  .table-container table {
       width: 100%;
-    }
-    
-    .responsive-table th {
-      position: relative;
-      padding-left: 50%;
-    }
-  
-    .responsive
-  
+      margin-bottom: 20px;
+  }
+
+  .expand-collapse-btn {
+      margin-right: 8px;
+  }
+}
