@@ -1,8 +1,10 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font-family */
+  font-size: 16px; /* Added font-size */
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  color: #333333; /* Added font color */
 }
 
 .table-container {
@@ -19,6 +21,8 @@ table {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   overflow: hidden;
+  font-size: 14px; /* Added font-size */
+  color: #333333; /* Added font color */
 }
 
 th {
@@ -50,15 +54,15 @@ tr:hover {
 
 .expandable {
   cursor: pointer;
-  color: #007bff;
+  color: #028c99;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
 
 .expand-collapse-btn {
-  font-size: 20px;
-  color: #007bff;
+  font-size: 10px;
+  color: #06BBCC;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -67,21 +71,21 @@ tr:hover {
 }
 
 .expand-collapse-btn:hover {
-  color: #0056b3;
+  color: #028c99;
   transform: scale(1.1);
 }
 
 /* Custom Topic Icon Style */
 .topic-icon {
   display: inline-block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   text-align: center;
-  background-color: #007bff;
+  background-color: #06BBCC;
   color: white;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 12px;
 }
 
