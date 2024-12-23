@@ -26,10 +26,10 @@ table {
 }
 
 th {
-  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  background: linear-gradient(135deg, #06BBCC, #1cc88a);
   color: white;
   padding: 18px;
-  text-align: left;
+  text-align: center; /* Changed text alignment to center */
   font-size: 20px;
   font-weight: 500;
   border-top-left-radius: 12px;
@@ -37,13 +37,14 @@ th {
 }
 
 th, td {
-  padding: 14px 18px;
-  text-align: left;
+  padding: 6px 10px;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
 td {
   background-color: #f4f6fc;
+  text-align: left;
 }
 
 tr:hover {
@@ -91,7 +92,7 @@ tr:hover {
 
 /* Add padding to the left for subtopics */
 .subtopic td {
-  padding-left: 100px; /* Add left padding to subtopic rows */
+  padding-left: 80px; /* Add left padding to subtopic rows */
 }
 
 /* Desktop Layout */
@@ -123,4 +124,20 @@ tr:hover {
   .expand-collapse-btn {
       margin-right: 8px;
   }
+}
+
+/* Style for the star icon */
+.gold-star {
+  color: gold;
+}
+
+/* Style for the blinking star icon */
+.blinking-star {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
