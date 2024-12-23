@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GIS Infotech: Research, Projects & Training</title>
+    <title>GIS Infotech: Courses</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <meta property="og:title" content="GIS Infotech Expert: Research, Projects & Training" />
-    <meta property="og:description" content="GIS services and solutions for mapping, research & more." />
+    <meta property="og:title" content="GIS Infotech Expert: Courses" />
+    <meta property="og:description" content="Explore our GIS training courses including GIS Intermediate, Advanced GIS, Remote Sensing, and Cartography." />
     <meta property="og:image" content="https://gis.infotechexpert.net/img/GIS.jpg" />
     <meta property="og:url" content="https://gis.infotechexpert.net" />
     <meta property="og:type" content="website" />
@@ -33,6 +33,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .course-item {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .course-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .course-item .icon {
+            font-size: 4rem;
+            color: #06BBCC;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+        .course-item:hover .icon {
+            color: #037d88;
+        }
+        .course-item .course-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .course-item .course-description {
+            font-size: 1rem;
+            color: #555;
+        }
+        .course-item .course-duration {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 10px;
+        }
+        .course-item .syllabus {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +90,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>GIS Infotech</h2>
+            <h2 class="m-1 text-primary"><i class="fa fa-globe me-3"></i>GIS Infotech</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -57,13 +99,14 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="services.html" class="nav-item nav-link">Services</a>
                 <a href="courses.html" class="nav-item nav-link active">Courses</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Academic Assignments</a>
-                        <a href="testimonial.html" class="dropdown-item">Research Papers</a>
-                        <a href="404.html" class="dropdown-item">Business Projects</a>
+                        <a href="" class="dropdown-item">Academic Assignments</a>
+                        <a href="" class="dropdown-item">Research Papers</a>
+                        <a href="" class="dropdown-item">Business Projects</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -94,79 +137,147 @@
 
 
     <!-- Courses Start -->
-    <div class="container-xxl py-5">
+    <div class="container-fluid py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">GIS Courses</h1>
+            <div class="text-center mb-5">
+                <h1 class="display-5">Our GIS Courses</h1>
+                <p>Explore our comprehensive GIS training courses</p>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-map icon"></i>
+                        <h5 class="course-title">ArcGIS PRO</h5>
+                        <p class="course-description">Learn the fundamentals and advanced features of ArcGIS PRO.</p>
+                        <p class="course-duration">Duration: 40 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('arcgis-pro')">View Syllabus</button>
+                        <div id="arcgis-pro" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Introduction to ArcGIS PRO</li>
+                                <li>Data Management</li>
+                                <li>Spatial Analysis</li>
+                                <li>Cartography and Map Design</li>
+                                <li>3D Visualization</li>
+                                <li>Geoprocessing Tools</li>
+                            </ul>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">GIS FUNDAMENTALS</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-clock text-primary"> 60 Hrs </small>
-                            </div>
-                            <h5 class="mb-4">Level - 1</h5>
-                        </div>
-                        <div class="d-flex flex-column border">
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;GIS & Remote Sensing</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Datum & projections</small>		
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Data Types, Heads-up Digitization</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Symbology & Labelling</small>
-  				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Managing spatial data in GIS</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Database Management</small>
-				<small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Cartographic Principles & Design</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-                <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;">&nbsp;</small>
-  				    	</div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h5 class="course-title">QGIS</h5>
+                        <p class="course-description">Master QGIS for spatial data analysis and visualization.</p>
+                        <p class="course-duration">Duration: 35 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('qgis')">View Syllabus</button>
+                        <div id="qgis" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Introduction to QGIS</li>
+                                <li>Data Import and Export</li>
+                                <li>Vector and Raster Analysis</li>
+                                <li>Map Layout and Design</li>
+                                <li>Plugins and Extensions</li>
+                                <li>Field Data Collection</li>
+                            </ul>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">ADVANCED GIS</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-clock text-primary"> 120 Hrs</small>
-                            </div>
-                            <h5 class="mb-4">Level - 2</h5>
-                        </div>
-                    	<div class="d-flex flex-column border">
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;GIS & Remote Sensing</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Datum & projections</small>		
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Data Types, Heads-up Digitization</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Symbology & Labelling</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Managing spatial data in GIS</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Database Management</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Cartographic Principles & Design</small>
-  				            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Network Analysis</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Introduction to Remote Sensing</small>		
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Image Classification: Supervised/Unsupervised</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Spatial analysis & Statistics</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;Model Builder</small>
-                            <small class="flex-fill text-left border-bottom py-2" style="padding-left: 50px;"><i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;<i class="fa fa-star" style="color: #06BBCC;"></i>&nbsp;&nbsp;3D Modelling</small>
-				        	</div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-satellite icon"></i>
+                        <h5 class="course-title">ERDAS Imagine</h5>
+                        <p class="course-description">Learn remote sensing and image processing with ERDAS Imagine.</p>
+                        <p class="course-duration">Duration: 30 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('erdas-imagine')">View Syllabus</button>
+                        <div id="erdas-imagine" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Introduction to ERDAS Imagine</li>
+                                <li>Image Preprocessing</li>
+                                <li>Image Classification</li>
+                                <li>Change Detection</li>
+                                <li>Hyperspectral Analysis</li>
+                                <li>Advanced Image Processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-globe icon"></i>
+                        <h5 class="course-title">GIS Intermediate</h5>
+                        <p class="course-description">Learn the fundamentals and advanced features of GIS.</p>
+                        <p class="course-duration">Duration: 45 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('gis-intermediate')">View Syllabus</button>
+                        <div id="gis-intermediate" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>GIS Fundamentals</li>
+                                <li>Data Management</li>
+                                <li>Spatial Analysis</li>
+                                <li>Cartography and Map Design</li>
+                                <li>Remote Sensing</li>
+                                <li>Geoprocessing Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h5 class="course-title">Advanced GIS</h5>
+                        <p class="course-description">Master advanced GIS techniques and applications.</p>
+                        <p class="course-duration">Duration: 50 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('advanced-gis')">View Syllabus</button>
+                        <div id="advanced-gis" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Advanced Spatial Analysis</li>
+                                <li>3D Visualization</li>
+                                <li>Network Analysis</li>
+                                <li>Remote Sensing Applications</li>
+                                <li>Geostatistical Analysis</li>
+                                <li>Model Builder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-tree icon"></i>
+                        <h5 class="course-title">Remote Sensing</h5>
+                        <p class="course-description">Learn the principles and applications of remote sensing.</p>
+                        <p class="course-duration">Duration: 40 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('remote-sensing')">View Syllabus</button>
+                        <div id="remote-sensing" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Introduction to Remote Sensing</li>
+                                <li>Satellite and Aerial Imagery</li>
+                                <li>Image Preprocessing</li>
+                                <li>Image Classification</li>
+                                <li>Change Detection</li>
+                                <li>Applications of Remote Sensing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-item bg-white text-center p-4">
+                        <i class="fas fa-map icon"></i>
+                        <h5 class="course-title">Cartography</h5>
+                        <p class="course-description">Learn the art and science of map making.</p>
+                        <p class="course-duration">Duration: 35 Hrs</p>
+                        <button class="btn btn-primary" onclick="toggleSyllabus('cartography')">View Syllabus</button>
+                        <div id="cartography" class="syllabus mt-3" style="display: none;">
+                            <ul>
+                                <li>Introduction to Cartography</li>
+                                <li>Map Design Principles</li>
+                                <li>Symbolization and Labeling</li>
+                                <li>Map Layout and Composition</li>
+                                <li>Interactive and Web Mapping</li>
+                                <li>Advanced Cartographic Techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more courses as needed -->
             </div>
         </div>
     </div>
@@ -227,6 +338,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function toggleSyllabus(courseId) {
+            var syllabus = document.getElementById(courseId);
+            if (syllabus.style.display === 'none' || syllabus.style.display === '') {
+                syllabus.style.display = 'block';
+            } else {
+                syllabus.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
